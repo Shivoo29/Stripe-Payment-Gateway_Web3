@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Stripe = reuire('stripe');
+const Stripe = require('stripe');
 require('dotenv').config();
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "", null);
